@@ -1,0 +1,74 @@
+:root {
+    --primary-color: #3A8EBA; /* Example color */
+    --secondary-color: #F9AFAE; /* Example color */
+    --text-color: #333;
+    --footer-color: rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'YourChosenFont1', sans-serif; /* Replace with your chosen font */
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em; /* Adjust as needed */
+    color: white; /* Change color as needed */
+}
+
+article {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+article img {
+    float: right;
+    margin-left: 15px;
+    width: 100px; /* Adjust size as needed */
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    background: var(--footer-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
