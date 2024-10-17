@@ -7,10 +7,43 @@
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
     background-color: #9370db;
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* Style the logo */
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Flexbox layout for the nav */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* History section styling */
+.history {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
 }
 
 .hero {
@@ -137,6 +170,28 @@ p {
     transition: transform 0.3s ease;
 }
 
+/* Style the Adventure section */
+#adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
 #adventure img:hover {
     transform: scale(1.05); 
 }
@@ -167,4 +222,22 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+footer .sociallinks a {
+    margin-left: 15px;
+}
+
+footer .sociallinks img {
+    width: 24px;
+    height: auto;
+}
+
+/* Footer styling */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #333;
+    color: white;
+    padding: 10px;
 }
