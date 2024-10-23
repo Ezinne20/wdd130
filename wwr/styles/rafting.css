@@ -41,10 +41,10 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Hero Section (Shared Style) */
+/* Hero Section Shared Style */
 .hero {
     position: relative;
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url'images/hero.jpg' no-repeat center center/cover;
     height: 80vh;
     color: white;
     display: flex;
@@ -92,7 +92,7 @@ nav ul li a:hover {
     background-color: #ff6347;
 }
 
-/* Main Content Styles (shared) */
+/* Main Content Styles shared */
 main {
     padding: 20px;
 }
@@ -204,7 +204,7 @@ form button:hover {
     margin: 20px 0;
 }
 
-/* Footer (common) */
+/* Footer common */
 footer {
     background-color: #9370db;
     color: white;
@@ -217,7 +217,7 @@ footer p {
     margin: 0;
 }
 
-/* Add a class for the Contact Us Wireframe link (contact.html specific) */
+/* Add a class for the Contact Us Wireframe link contact.html specific */
 footer .wireframe-link {
     display: block;
     margin-top: 10px;
@@ -229,7 +229,7 @@ footer .wireframe-link:hover {
     text-decoration: none;
 }
 
-/* Social Links (common) */
+/* Social Links common */
 .sociallinks {
     text-align: center;
     margin: 20px 0;
@@ -242,5 +242,5 @@ footer .wireframe-link:hover {
 }
 
 .sociallinks a img:hover {
-    transform: scale(1.1);
+    transform: scale 1.1;
 }
