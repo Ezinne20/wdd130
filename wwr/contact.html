@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for inquiries, reservations, or suggestions. Reach out to our team for the best white water rafting experience!">
+    <meta name="author" content="Rafting Adventures Team">
+    <title>Contact Us - White Water Rafting Plan</title>
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Font (Roboto) -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="rafting.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="images/logo.png" alt="White Water Rafting Logo" class="logo">
+        <h1>White Water Rafting</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact-info">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Reach out to us through the following channels:</p>
+            
+            <h3>Company Information</h3>
+            <p><strong>Address:</strong> 123 Rafting Lane, River City, RC 45678</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> contact@raftingadventures.com</p>
+
+            <!-- Embedded Google Map -->
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509686!2d144.95373561531574!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf57791b1d5bdf1af!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611787552866!5m2!1sen!2sau" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+
+        <!-- Employee Profiles -->
+        <section id="team">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <p><strong>John Doe</strong><br>Customer Support</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <p><strong>Jane Smith</strong><br>Raft Guide</p>
+            </div>
+            <div class="employee">
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <p><strong>Sam Brown</strong><br>Reservation Specialist</p>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact-form">
+            <h2>Get in Touch</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>What’s the purpose of your message?</p>
+                <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                <label for="general">General Inquiry</label><br>
+                <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                <label for="reservation">Reservation Question</label><br>
+                <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                <label for="suggestion">Website Suggestion</label><br>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Social Links -->
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/facebook.svg" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twitter.svg" alt="Twitter">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagram.svg" alt="Instagram">
+        </a>
+    </nav>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rafting Adventures. All Rights Reserved.</p>
+        <a href="wireframe.png">Contact Us Wireframe</a>
+    </footer>
+
+</body>
+</html>
