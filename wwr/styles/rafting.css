@@ -244,3 +244,45 @@ footer .wireframe-link:hover {
 .sociallinks a img:hover {
     transform: scale 1.1;
 }
+
+/* Trips Section Styles */
+#trips-list {
+    display: grid; /* Use CSS Grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the section */
+}
+
+.trip {
+    background-color: #fff; /* White background for trip cards */
+    padding: 20px; /* Padding inside each trip card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text alignment */
+}
+
+.trip img {
+    width: 100%; /* Responsive image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+
+.trip h2 {
+    color: #9370db; /* Color for trip titles */
+    margin: 15px 0; /* Margin above and below the title */
+}
+
+.cta-button {
+    background-color: #ff4500; /* Button color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    font-size: 1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Uppercase text */
+    transition: background 0.3s ease; /* Transition effect for background */
+}
+
+.cta-button:hover {
+    background-color: #ff6347; /* Change background color on hover */
+}
