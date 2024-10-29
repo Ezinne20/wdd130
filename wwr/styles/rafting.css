@@ -1,9 +1,9 @@
 /* General Reset */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f4;
-    margin: 0; 
+    margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
 }
 
 /* Header Styles */
@@ -12,11 +12,9 @@ header {
     grid-template-columns: auto 1fr auto;
     align-items: center;
     background-color: #9370db; /* Purple Color */
-    padding: 10px 20px;
+    padding: 20px 0;
     color: white;
 }
-
-/* Continue with the rest of your styles */
 
 .logo {
     width: 100px;
@@ -44,7 +42,7 @@ nav ul li a:hover {
 /* Hero Section Shared Style */
 .hero {
     position: relative;
-    background: url'images/hero.jpg' no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     height: 80vh;
     color: white;
     display: flex;
@@ -77,6 +75,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+/* CTA Button */
 .cta-button {
     background-color: #ff4500; /* Orange color */
     color: white;
@@ -114,11 +113,12 @@ p {
 }
 
 /* Contact Us Page - New Styles */
-/* Contact Form Section */
+/* Contact Info Section */
 #contact-info {
+    text-align: center;
     background-color: #fff;
     padding: 20px;
-    margin: 20px auto;
+    margin: 0 auto;
     max-width: 800px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -139,6 +139,10 @@ p {
 
 /* Contact Form */
 form {
+    padding: 20px;
+    background-color: white; /* Add background for better contrast */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     display: flex;
     flex-direction: column;
     margin: 20px auto;
@@ -160,17 +164,18 @@ form textarea {
 }
 
 form button {
-    background-color: #9370db;
+    background-color: #007bff;
     color: white;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
     font-size: 1.1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background-color: #6c49a1;
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
 /* Team Section */
@@ -178,11 +183,14 @@ form button:hover {
     display: flex;
     justify-content: space-around;
     margin: 20px auto;
-    max-width: 800px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #team .employee {
     text-align: center;
+    flex: 1 0 30%; /* Adjusts size and allows wrapping */
+    margin: 10px; /* Adds spacing between employee cards */
 }
 
 #team .employee img {
@@ -196,14 +204,13 @@ form button:hover {
     font-size: 1rem;
 }
 
-/* Add this to rafting.css */
+/* Google Map Embed */
 .google-map {
     border: none; /* or you can set specific border styles */
     width: 100%; /* or a specific width */
     height: 450px; /* keep the height as needed */
 }
 
-/* Google Map Embed */
 #contact-info iframe {
     width: 100%;
     height: 400px;
@@ -249,7 +256,7 @@ footer .wireframe-link:hover {
 }
 
 .sociallinks a img:hover {
-    transform: scale 1.1;
+    transform: scale(1.1);
 }
 
 /* Trips Section Styles */
@@ -279,17 +286,43 @@ footer .wireframe-link:hover {
     margin: 15px 0; /* Margin above and below the title */
 }
 
-.cta-button {
-    background-color: #ff4500; /* Button color */
-    color: white; /* Button text color */
-    padding: 10px 20px; /* Button padding */
-    border: none; /* No border */
-    font-size: 1rem; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    text-transform: uppercase; /* Uppercase text */
-    transition: background 0.3s ease; /* Transition effect for background */
+/* Newsletter Signup Styles */
+#newsletter-signup {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
-.cta-button:hover {
-    background-color: #ff6347; /* Change background color on hover */
+/* Call to Action Styles */
+.cta {
+    text-align: center;
+    background-color: #e8eaf6; /* Light background for contrast */
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Grid Layout for About and Offerings */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #fff; /* White background for each grid item */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px;
 }
