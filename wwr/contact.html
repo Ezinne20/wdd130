@@ -3,81 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/rafting.css">
-    <title>Contact Us - White Water Rafting</title>
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- Link to your CSS file -->
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- Header Section -->
     <header>
-        <img src="images/logo.png" alt="Rafting Logo" class="logo">
+        <img src="images/logo.png" alt="Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#trips">Trips</a></li>
+                <li><a href="#contact">Contact Us</a></li>
             </ul>
         </nav>
-        <img src="images/social-icons.png" alt="Social Media Links" class="social-icons">
     </header>
 
-    <!-- Company Information -->
-    <section id="company-info">
-        <h2>Contact Information</h2>
-        <p>Address: 123 Rafting St., River City, ST 12345</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: <a href="mailto:info@raftingwebsite.com">info@raftingwebsite.com</a></p>
-        <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094796!2d144.9537363153163!3d-37.81720997975121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f12345d%3A0x1234567890abcdef!2sRafting%20St%2C%20River%20City%2C%20ST%2012345!5e0!3m2!1sen!2sus!4v1615358432510!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-
-    <!-- Employee Profiles -->
-    <section id="employee-profiles">
-        <h2>Meet Our Team</h2>
-        <div class="employee-grid">
-            <div class="employee">
-                <img src="images/employee1.jpg" alt="Employee 1">
-                <p>Employee 1 - Title</p>
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to Our Rafting Adventures</h1>
+                <p>Experience the thrill of rafting with us!</p>
+                <button class="cta-button">Book Now</button>
             </div>
-            <div class="employee">
-                <img src="images/employee2.jpg" alt="Employee 2">
-                <p>Employee 2 - Title</p>
+        </section>
+
+        <section id="about" class="history">
+            <h2>Our History</h2>
+            <p>Founded in 2000, our rafting company has been providing thrilling adventures for over two decades. Our experienced guides ensure a safe and enjoyable experience for all. Join us to explore the beautiful rivers while creating unforgettable memories!</p>
+        </section>
+
+        <section id="trips">
+            <h2>Our Adventures</h2>
+            <div id="trips-list">
+                <!-- Adventure Cards -->
+                <div class="trip">
+                    <img src="images/adventure1.jpg" alt="Adventure 1">
+                    <h3>Adventure 1</h3>
+                    <p>Details about Adventure 1...</p>
+                </div>
+                <div class="trip">
+                    <img src="images/adventure2.jpg" alt="Adventure 2">
+                    <h3>Adventure 2</h3>
+                    <p>Experience the thrill of river rafting with us!</p>
+                </div>
+                <div class="trip">
+                    <img src="images/adventure3.jpg" alt="Adventure 3">
+                    <h3>Adventure 3</h3>
+                    <p>Join us for a breathtaking journey on the water.</p>
+                </div>
+                <!-- Add more adventure cards as needed -->
             </div>
-            <div class="employee">
-                <img src="images/employee3.jpg" alt="Employee 3">
-                <p>Employee 3 - Title</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div id="contact-info">
+                <p>For inquiries, reach out to us at:</p>
+                <p>Email: info@raftingadventures.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <iframe class="google-map" src="https://www.google.com/maps/embed?..."></iframe>
             </div>
-        </div>
-    </section>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
 
-    <!-- Contact Form -->
-    <section id="contact-form">
-        <h2>Get in Touch</h2>
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <div id="team">
+                <h2>Meet Our Team</h2>
+                <div class="employee">
+                    <img src="images/employee1.jpg" alt="Employee 1">
+                    <p>John Doe - Head Guide</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee2.jpg" alt="Employee 2">
+                    <p>Jane Smith - Safety Officer</p>
+                </div>
+                <div class="employee">
+                    <img src="images/employee3.jpg" alt="Employee 3">
+                    <p>Mike Johnson - Rafting Instructor</p>
+                </div>
+                <!-- Add more employee profiles as needed -->
+            </div>
+        </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <section id="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <p>Stay updated on our latest trips and promotions!</p>
+            <form>
+                <label for="newsletter-email">Email:</label>
+                <input type="email" id="newsletter-email" name="newsletter-email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
 
-            <label for="purpose">Purpose of your message:</label>
-            <label><input type="radio" name="purpose" value="General Inquiry"> General Inquiry</label>
-            <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
-            <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
-
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 White Water Rafting. All Rights Reserved.</p>
-        <p><a href="link-to-your-wireframe-image" target="_blank">View Wireframe</a></p>
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        <a href="contact.html" class="wireframe-link">View Contact Us Wireframe</a>
+        <div class="sociallinks">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+            <!-- Add more social links as needed -->
+        </div>
     </footer>
+
 </body>
 </html>
